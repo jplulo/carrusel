@@ -16,14 +16,13 @@ public class CarouselRun {
             position++;
             count++;
         }
+
         if (count == carrousel.length) return -1;
         return carrousel[position++]--;
     }
 
     public boolean isFinished() {
-        for (int var: carrousel) {
-            if (var > 0) return false;
-        }
-        return true;    }
+        return true;
+    }
 
 }

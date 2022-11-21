@@ -13,7 +13,6 @@ public class DecrementingCarousel {
 
     public DecrementingCarousel(int capacity) {
         carrousel = new int[capacity];
-        System.out.println(Arrays.toString(carrousel));
     }
 
     public boolean addElement(int element){
@@ -26,7 +25,7 @@ public class DecrementingCarousel {
         }else{
             carrousel[addIndex] = element;
             addIndex++;
-            System.out.println(Arrays.toString(carrousel));
+            //System.out.println(Arrays.toString(carrousel));
         }
         return true;
     }
